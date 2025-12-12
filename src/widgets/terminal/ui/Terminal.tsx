@@ -1,5 +1,5 @@
-import { useTerminalStore } from "@/features/toggleTerminal";
-import { ToggleButton } from "@/features/toggleTerminal/ui/ToggleButton";
+import { useTerminalStore } from "@/features/terminal";
+import { ToggleButton } from "@/features/terminal";
 import { cn } from "@/shared/lib/classnames";
 import { useEffect, useState } from "react";
 
