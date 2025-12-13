@@ -1,9 +1,9 @@
 // widgets/task-list/ui/TaskList.tsx
 import type { TaskCardType } from "@/entities/task";
 import { TaskCard } from "@/entities/task/ui/TaskCard";
-import { DeleteTaskButton } from "@/features/task/taskDelete";
+import { DeleteTaskButton } from "@/features/taskDelete";
 
-import { OpenEditTaskDrawerButton } from "@/features/task/taskEdit";
+import { OpenEditTaskDrawerButton } from "@/features/taskEdit";
 
 interface TaskListProps {
   tasks: TaskCardType[];

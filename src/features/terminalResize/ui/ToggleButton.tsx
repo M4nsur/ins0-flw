@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowUp } from "lucide-react";
-import { useTerminalStore } from "../model/useTerminalStore ";
+import { useTerminalStore } from "../../../entities/terminal/model/useTerminalStore ";
 
 export const ToggleButton = () => {
   const isFullscreen = useTerminalStore((state) => state.isFullscreen);

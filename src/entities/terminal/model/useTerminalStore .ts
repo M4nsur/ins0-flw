@@ -12,7 +12,7 @@ export const useTerminalStore = create<TerminalStore>()(
   persist(
     (set) => ({
       isFullscreen: false,
-      terminalSize: 3,
+      terminalSize: -1,
 
       toggleFullscreen: () =>
         set((state) => ({ isFullscreen: !state.isFullscreen })),
