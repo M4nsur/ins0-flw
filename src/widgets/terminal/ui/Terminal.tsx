@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export const Terminal = () => {
   const isFullscreen = useTerminalStore((state) => state.isFullscreen);
+  const terminalSize = useTerminalStore((state) => state.terminalSize);
   const [delay, setDelay] = useState(isFullscreen);
 
   useEffect(() => {
@@ -25,9 +26,12 @@ export const Terminal = () => {
         <div>Terminal</div>
         <ToggleButton />
       </div>
-      <div className={cn("overflow-auto h-screen bg-bg-secondary pt-4")}>
-        dsadsa
-      </div>
+      <div
+        className={cn(
+          "overflow-auto h-screen bg-bg-secondary pt-4",
+          terminalSize < 5 ? "hidden" : ""
+        )}
+      ></div>
     </div>
   );
 };
