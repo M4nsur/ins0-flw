@@ -8,7 +8,7 @@ import {
   DEFAULT_TASK_VALUES,
   PRIORITY_OPTIONS,
   STATUS_OPTIONS,
-} from "@/features/task/taskAdd/model/constants";
+} from "@/features/taskAdd/model/constants";
 import { Textarea } from "@/shared/ui/textarea";
 import { DataPicker } from "@/shared/ui/dataPicker";
 import { Button } from "@/shared/ui/button";

@@ -10,9 +10,9 @@ import { Tabs, TabsList, TabsTrigger } from "@/shared/lib/shadcn";
 import { Button } from "@/shared/ui/button";
 import { TaskInfo } from "@/entities/task/ui/TaskInfo";
 
-import { DeleteTaskButton } from "@/features/task/taskDelete"; // ✅
+import { DeleteTaskButton } from "@/features/taskDelete"; // ✅
 import { useTaskDrawerStore } from "@/entities/task";
-import { EditTaskForm } from "@/features/task/taskEdit/ui/EditTaskForm";
+import { EditTaskForm } from "@/features/taskEdit/ui/EditTaskForm";
 
 export const TaskDrawer = () => {
   const {
@@ -22,7 +22,6 @@ export const TaskDrawer = () => {
     closeDrawer,
     setMode,
   } = useTaskDrawerStore();
-
 
   const tabs = [
     { value: "view" as const, label: "View" },

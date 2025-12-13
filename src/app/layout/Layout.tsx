@@ -2,8 +2,8 @@ import { Header } from "@/widgets/header/index";
 import { Terminal } from "@/widgets/terminal";
 import { Outlet } from "react-router";
 import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
-import { useTerminalPanels } from "@/features/terminal";
-import { useTerminalStore } from "@/features/terminal";
+import { useTerminalPanels } from "@/features/terminalResize";
+import { useTerminalStore } from "@/entities/terminal";
 
 export const Layout = () => {
   const { mainPanelRef, terminalPanelRef } = useTerminalPanels();

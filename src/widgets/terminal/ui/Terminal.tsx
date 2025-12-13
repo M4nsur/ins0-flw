@@ -1,5 +1,5 @@
-import { useTerminalStore } from "@/features/terminal";
-import { ToggleButton } from "@/features/terminal";
+import { useTerminalStore } from "@/features/terminalResize";
+import { ToggleButton } from "@/features/terminalResize";
 import { cn } from "@/shared/lib/classnames";
 import { useEffect, useState } from "react";
 
@@ -18,14 +18,16 @@ export const Terminal = () => {
     <div className="flex flex-col">
       <div
         className={cn(
-          "flex text-[11px] items-center justify-between pb-2 pt-1 px-2 border-bg-secondary ",
+          "flex justify-between pt-1 px-2 border-bg-secondary items-center",
           delay ? "border-t-2 bg-bg-secondary" : "bg-bg-primary"
         )}
       >
         <div>Terminal</div>
         <ToggleButton />
       </div>
-      <div className="overflow-auto p-2 h-screen bg-bg-secondary ">dsadsa</div>
+      <div className={cn("overflow-auto h-screen bg-bg-secondary pt-4")}>
+        dsadsa
+      </div>
     </div>
   );
 };

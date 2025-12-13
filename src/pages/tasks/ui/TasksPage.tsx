@@ -1,5 +1,5 @@
 import { PageHeader } from "@/shared/ui/pageHeader";
-import { AddTaskAction } from "@/features/task/taskAdd";
+import { AddTaskAction } from "@/features/taskAdd";
 import { fetchTasks } from "@/entities/task/api/tasksApi";
 import { TaskDrawer } from "@/widgets/taskDrawer";
 import { TaskList } from "@/widgets/taskList";

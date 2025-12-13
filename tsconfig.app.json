@@ -28,5 +28,5 @@
     "noUncheckedSideEffectImports": true,
     "typeRoots": ["./src/types", "./node_modules/@types"]
   },
-  "include": ["src", "src/features/task/taskEdit/ui/OpenEditTaskDrawerButton.tsx"]
+  "include": ["src", "src/features/taskEdit/ui/OpenEditTaskDrawerButton.tsx"]
 }

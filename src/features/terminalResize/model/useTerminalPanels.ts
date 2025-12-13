@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import type { ImperativePanelHandle } from "react-resizable-panels";
-import { useTerminalStore } from "./useTerminalStore ";
+import { useTerminalStore } from "../../../entities/terminal/model/useTerminalStore ";
 
 export const useTerminalPanels = () => {
   const isFullscreen = useTerminalStore((state) => state.isFullscreen);
