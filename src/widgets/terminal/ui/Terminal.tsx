@@ -1,4 +1,4 @@
-import { useTerminalStore } from "@/features/terminalResize";
+import { useTerminalStore } from "@/entities/terminal";
 import { ToggleButton } from "@/features/terminalResize";
 import { cn } from "@/shared/lib/classnames";
 import { useEffect, useState } from "react";
