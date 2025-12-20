@@ -1,4 +1,5 @@
 import { useTerminalStore } from "@/entities/terminal";
+import { TerminalInput } from "@/features/terminalInput";
 import { ToggleButton } from "@/features/terminalResize";
 import { cn } from "@/shared/lib/classnames";
 import { useEffect, useState } from "react";
@@ -31,7 +32,9 @@ export const Terminal = () => {
           "overflow-auto h-screen bg-bg-secondary pt-4",
           terminalSize < 5 ? "hidden" : ""
         )}
-      ></div>
+      >
+        <TerminalInput />
+      </div>
     </div>
   );
 };
